@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Form, Col, Container } from 'react-bootstrap';
 
-function NumberOfChildren (props) {
+function Input (props) {
   function handleSubmit(event){
     event.preventDefault();
     props.onClick(event);
@@ -12,7 +12,7 @@ function NumberOfChildren (props) {
       <Form onSubmit={handleSubmit}>
         <Form.Row>
           <Col>
-            <Form.Control placeholder="Enter number of children" name="noChildren"/>
+            <Form.Control placeholder={props.placeHolder} name={props.inputName}/>
           </Col>
           <Col>
             <Button type="submit">Submit</Button>
@@ -23,4 +23,4 @@ function NumberOfChildren (props) {
   </div>);
 }
 
-export default NumberOfChildren;
+export default Input;
