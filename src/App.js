@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Input from './components/Input'
-import SchoolRoster from './components/SchoolRoster'
+import SortingHat from './components/SortingHat'
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './App.css';
@@ -36,7 +36,7 @@ class App extends Component {
           <Input onClick={this.handleNoChildrenEntered} placeHolder={"Enter number of children."} inputName={"noChildren"} />
         </Col>
       </Row>
-      <SchoolRoster hidden={!this.state.setupComplete} maxChildrenPerHouse={this.state.maxChildrenPerHouse}/>
+      <SortingHat hidden={!this.state.setupComplete} maxChildrenPerHouse={this.state.maxChildrenPerHouse}/>
     </Container>
   }
 }

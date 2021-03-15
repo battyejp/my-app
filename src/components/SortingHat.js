@@ -4,7 +4,7 @@ import House from './House'
 import SelectedHouse from './SelectedHouse'
 import { Row, Col } from 'react-bootstrap';
 
-class SchoolRoster extends Component {
+class SortingHat extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -85,4 +85,4 @@ class SchoolRoster extends Component {
   }
 }
 
-export default SchoolRoster;
+export default SortingHat;
