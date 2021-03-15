@@ -7,7 +7,7 @@ function Input (props) {
     props.onClick(event);
   }
 
-  return (<div className={props.hidden ? 'hidden' : ''}>
+  return (<div>
     <Form onSubmit={handleSubmit}>
       <Form.Row>
         <Col>
